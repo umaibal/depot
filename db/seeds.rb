@@ -18,4 +18,16 @@ Product.create!(title: 'Seven Mobile Apps',
       </p>},
   image_url: '7apps.jpg',
   price: 26.00)
+
+  Product.create!(title: 'Harry Potter and the Sorcerers Stone',
+    description:
+      %{<p>
+        <em>The Wizarding World</em>
+        A boy who lost his parents discovers the secrets they left 
+        behind. He goes to Hogwarts, the school of Witchcraft
+        and Wizardry, where he meets his friends Ron Weasley
+        and Hermione Granger.
+        </p>},
+    image_url: 'hp.jpg',
+    price: 18.00)
   # 
