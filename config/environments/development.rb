@@ -1,4 +1,18 @@
 Rails.application.configure do
+  # want action mailer to attempt email delivery 
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.stmp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "domain.of.sender.net",
+    authentication: "plain",
+    user_name: "hody",
+    password: "secret",
+    enable_starttls_auto: true
+  }
+
+
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
   # Settings specified here will take precedence over those in config/application.rb.
