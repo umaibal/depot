@@ -1,3 +1,5 @@
+require 'test_helper'
+
 class OrderMailer < ApplicationMailer
   default from: 'Sam Ruby <depot@example.com>'
 
